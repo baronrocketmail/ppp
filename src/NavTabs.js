@@ -2,10 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import {initializeApp} from "firebase/app";
-import {getFirestore, collection,getDocs } from "firebase/firestore"
 import {fetchData} from "./fetchData.mjs";
 import {useNavigate} from "react-router-dom";
+import react from "react";
 
 
 function LinkTab(props) {
@@ -36,22 +35,26 @@ export default function NavTabs() {
         setValue(newValue);
         console.log(newValue)
         if (newValue == 0) {
-            navigate("/" + "3638castro")
+            navigate("/" + "all")
         } else if (newValue == 1){
-            navigate("/"+"539blossom")
+            navigate("/"+"3638castro")
         } else if (newValue == 2){
-            navigate("/"+"817825rodney")
+            navigate("/"+"539blossom")
         } else if (newValue == 3) {
+            navigate("/"+"817825rodney")
+        } else if (newValue == 4) {
             navigate("/"+"61castro")
-    };}
+        }
+        ;}
+
 
 
     return (
         <div>
-            {console.log(value)}
 
         <Box className={"nav"} sx={{ width: '100%' }}>
-            <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
+            <Tabs   variant="scrollable"
+                    scrollButtons="auto" value={value} onChange={handleChange} aria-label="nav tabs example">
                 {tabElements}
             </Tabs>
         </Box>

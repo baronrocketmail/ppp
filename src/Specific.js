@@ -7,9 +7,7 @@ function getImageURLs(id){
     let imageElements = []
     for (let elem in data) {
         if (data[elem].url === id) {
-            console.log("hit")
             let imageURLs = data[elem].images
-            console.log(imageURLs)
             return imageURLs
         }
     }

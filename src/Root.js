@@ -5,7 +5,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import NavTabs from "./NavTabs";
-import ImgLst from "./ImgLst";
+import ImageList from "./ImageList";
 import {Outlet } from "react-router-dom";
 
 

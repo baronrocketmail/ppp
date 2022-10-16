@@ -5,7 +5,6 @@ import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import NavTabs from "./NavTabs";
-import ImageList from "./ImageList";
 import {Outlet } from "react-router-dom";
 
 
@@ -17,21 +16,6 @@ export default function Root(){
         <>
             <NavTabs/>
             <Outlet/>
-            <Box className={"fab"} sx={{ '& > :not(style)': { m: 1 } }}>
-                <Fab color="primary" aria-label="add">
-                    <AddIcon />
-                </Fab>
-                <Fab color="secondary" aria-label="edit">
-                    <EditIcon />
-                </Fab>
-                <Fab variant="extended">
-                    <NavigationIcon sx={{ mr: 1 }} />
-                    Navigate
-                </Fab>
-                <Fab disabled aria-label="like">
-                    <FavoriteIcon />
-                </Fab>
-            </Box>
         </>
     )
 

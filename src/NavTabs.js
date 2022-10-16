@@ -4,7 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import {fetchData} from "./fetchData.mjs";
 import {useNavigate} from "react-router-dom";
-import react from "react";
 
 
 function LinkTab(props) {

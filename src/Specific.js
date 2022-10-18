@@ -35,21 +35,17 @@ export default function Specific(){
             {imageElements}
 
             <Box className={"fab"} sx={{ '& > :not(style)': { m: 1 } }}>
-                <Fab variant="extended" color="primary" aria-label="download" onClick={x => {alert(23)}}>
-                    <DownloadIcon />
-                    Architectural
+                <Fab variant="string"  aria-label="download" onClick={x => {alert(23)}}>
+                    ARC
                 </Fab>
-                <Fab variant="extended" color="primary" aria-label="download" onClick={x => {alert(23)}}>
-                    <DownloadIcon />
+                <Fab variant="string" aria-label="download" onClick={x => {alert(23)}}>
                     MEP
                 </Fab>
-                <Fab color="secondary" variant="extended" aria-label="edit">
-                    <DownloadIcon />
-                    REVIT
+                <Fab variant="string" aria-label="edit">
+                    RVT
                 </Fab>
-                <Fab variant="extended">
-                    <ListIcon sx={{ mr: 1 }} />
-                    MATERIALS
+                <Fab variant="string">
+                    M
                 </Fab>
             </Box>
         </>

@@ -2,10 +2,6 @@ import {useParams} from "react-router-dom";
 import {fetchData} from "./fetchData.mjs";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
-import DownloadIcon from "@mui/icons-material/Download";
-import ListIcon from '@mui/icons-material/List';
-import NavigationIcon from "@mui/icons-material/Navigation";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 
 function getImageURLs(id){
     let imageURLs = []
@@ -35,17 +31,17 @@ export default function Specific(){
             {imageElements}
 
             <Box className={"fab"} sx={{ '& > :not(style)': { m: 1 } }}>
-                <Fab variant="string"  aria-label="download" onClick={x => {alert(23)}}>
+                <Fab variant="string"   aria-label="download" onClick={x => {window.location.href = "https://storage.googleapis.com/2022fundraising-website/3638/36%2038.pdf"}}>
                     ARC
                 </Fab>
                 <Fab variant="string" aria-label="download" onClick={x => {alert(23)}}>
                     MEP
                 </Fab>
-                <Fab variant="string" aria-label="edit">
-                    RVT
-                </Fab>
                 <Fab variant="string">
                     M
+                </Fab>
+                <Fab variant="string" aria-label="edit">
+                    RVT
                 </Fab>
             </Box>
         </>
